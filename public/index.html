@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies and Comments</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script defer src="script.js"></script> <!-- Use defer to ensure the script runs after the DOM is loaded -->
+</head>
+<body>
+
+  <h2>Movies</h2>
+  
+  <div id="searchBar" class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for a movie by title..." />
+    <button id="searchButton">Search</button>
+  </div>
+
+  <div id="moviesGrid" class="movies-grid">
+    <!-- Movies will be dynamically inserted here -->
+  </div>
+  
+  <div id="pagination" class="pagination">
+    <!-- Pagination buttons will be dynamically inserted here -->
+  </div>
+
+<!-- Modal for displaying movie details and comments -->
+<!-- Modal for displaying movie details and comments -->
+<div id="commentsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div class="movie-header">
+      <img id="moviePoster" src="" alt="Movie Poster" />
+      <div>
+        <h3 id="movieTitle">Movie Title</h3>
+        <div id="movieDetails">
+          <!-- Movie details will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+    <h4>Comments</h4>
+    <ul id="commentsList">
+      <!-- Comments will be dynamically inserted here -->
+    </ul>
+    <h4>Add a Comment</h4>
+    <form id="addCommentForm">
+      <input type="text" id="commentName" placeholder="Your Name" required />
+      <textarea id="commentText" placeholder="Your Comment" required></textarea>
+      <button type="submit">Add Comment</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
