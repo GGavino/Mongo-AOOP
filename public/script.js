@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             movieCard.classList.add('movie-card');
 
             const poster = document.createElement('img');
-            poster.src = movie.poster || 'placeholder.jpg'; // Use a placeholder if no poster is available
+            poster.src = movie.poster || 'placeholder.png'; // Use a placeholder if no poster is available
             poster.alt = `${movie.title} Poster`;
 
             const title = document.createElement('h3');
@@ -184,7 +184,7 @@ const fetchMovieDetails = async (movieId) => {
         const movieTitle = document.getElementById('movieTitle');
         const movieDetails = document.getElementById('movieDetails');
 
-        moviePoster.src = movie.poster || 'placeholder.jpg'; // Use a placeholder if no poster is available
+        moviePoster.src = movie.poster || 'placeholder.png'; // Use a placeholder if no poster is available
         moviePoster.alt = `${movie.title} Poster`;
         movieTitle.textContent = movie.title || 'Unknown Title';
         movieDetails.innerHTML = `
