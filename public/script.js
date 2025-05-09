@@ -1,16 +1,3 @@
-/**
- * @file script.js
- * @description This file contains the JavaScript code for handling the frontend logic of the web application.
- * @version 1.0.0
- * @date 2024-11-20
- * @author Pedro Moreira
- * @organization ESTG-IPVC
- */
-
-// using DOMContentLoaded
-// alternatively "defer" attribute could be used in the <script> element 
-// to prevent running the script before the page is loaded.
-
 let baseUrl = 'http://localhost:3000';
 let moviesApiUrl = `${baseUrl}/movies`;
 let commentsApiUrl = `${baseUrl}/comments/movie`;
